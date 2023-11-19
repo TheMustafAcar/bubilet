@@ -84,18 +84,18 @@
         </form> 
  
         <div style="background-color: rgb(255, 255, 255,0.001); width: 40%; position: relative; height: 80%; display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; " class="rightcontent">
-        <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/7.24.png" alt=""> <a style="margin: 6px; text-align: center; position: absolute; bottom: 10px;">7/24 Müşteri Hizmetleri</a>
+        <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/7_24.png" alt=""> <a style="margin: 6px; text-align: center; position: absolute; bottom: 10px;">7/24 Müşteri Hizmetleri</a>
         </div>
-        <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/guvenli odeme.png" alt=""> <a style="margin:6px; margin-left: 35px; text-align: center; position: absolute; bottom: 10px;">Güvenli Ödeme</a>
+        <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/guvenliodeme.png" alt=""> <a style="margin:6px; margin-left: 35px; text-align: center; position: absolute; bottom: 10px;">Güvenli Ödeme</a>
 
         </div>
-        <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/komisyon yok.png" alt=""> <a style="margin:6px; margin-left: 10px; text-align: center;  position: absolute; bottom: 10px;">Komisyon Yok, Ücretsiz</a>
+        <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/komisyonyok.png" alt=""> <a style="margin:6px; margin-left: 10px; text-align: center;  position: absolute; bottom: 10px;">Komisyon Yok, Ücretsiz</a>
 
         </div>
-        <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 45px; width: 90px;" src="img/ziyaretçi.png" alt=""> <a style="margin:6px; text-align: center;  position: absolute; bottom: 10px;">Ayda 25 Milyondan Fazla Ziyaretçi</a>
+        <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 45px; width: 90px;" src="img/ziyaretci.png" alt=""> <a style="margin:6px; text-align: center;  position: absolute; bottom: 10px;">Ayda 25 Milyondan Fazla Ziyaretçi</a>
 
         </div>
-        <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/hızlı bilet al.png" alt=""> <a style="margin:6px; margin-left: 12px; text-align: center;  position: absolute; bottom: 10px;">İki Dakikada Biletini Al</a>
+        <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/hizlibiletal.png" alt=""> <a style="margin:6px; margin-left: 12px; text-align: center;  position: absolute; bottom: 10px;">İki Dakikada Biletini Al</a>
 
         </div>
         <div style="background-color:  rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/iade.png" alt=""> <a style="margin:6px; text-align: center;  position: absolute; bottom: 10px;">İptal Edilen Bilete Kesintisiz İade</a>
@@ -120,7 +120,7 @@
           </div>
         
           <div class="card" style="width: 18rem; margin-left: 10px;">
-            <div style="justify-content: center; display: flex; height: 50%;"><img src="img/güvenliöde.png" style="width: 230px;" class="card-img-top" alt="..."></div>
+            <div style="justify-content: center; display: flex; height: 50%;"><img src="img/güvenliode.png" style="width: 230px;" class="card-img-top" alt="..."></div>
             <div class="card-body" style="height: 50%;">
               <p class="card-text"><h1 style="font-size: 16px; text-align:center;">Güvenli Ödeme</h1>Tüm otobüs bilet alımlarınızı ister evinizden, ister ofisinizden ya da dilerseniz cep telefonunuzdan kolay, hızlı ve güvenilir bir şekilde gerçekleştirebilirsiniz.</p>
             </div>
