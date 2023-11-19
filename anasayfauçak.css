@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #d40000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.navbar2 {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: 50px;
+}
+
+.navbar-logo {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 1rem;
+}
+
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #ddd;
+}
+.banner form .profile {
+    display: flex;
+    align-items: center;
+}
+
+.banner form .profile img {
+    background-color: white;
+    width: 40px;
+    border: red 2px solid;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 60%;
+    margin-right: 6px;
+}
+
+.banner form .profile .profileactive h3 {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-left: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner form .profile .profileactive h3 i {
+    margin-left: 2px;
+    scale: 0.8;
+}
+
+.banner form .profile .profileactive .downmenu {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(232, 232, 232, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.banner form .profile .profileactive:hover .downmenu {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+    height: 95px;
+
+}
+
+.banner form .profile .profileactive .downmenu a {
+    padding: 4px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.banner form .profile .profileactive .downmenu a:hover {
+    width: 100%;
+    background-color: #d5d5d5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(44, 44, 44);
+}
+
+.banner form.active .profile .profileactive h3 {
+    color: black;
+}
