@@ -1,9 +1,47 @@
+<?php
+include("connect.php");
+$email = $password = $Err="";
+session_start();
+
+if (isset($_POST["submit"])) {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    $cekme = "SELECT * FROM users WHERE eposta='$email'";
+    $query = mysqli_query($connect, $cekme);
+
+    if ($query) {
+        $kullanicibilgisi = mysqli_fetch_assoc($query);
+
+        if ($kullanicibilgisi) {
+            $hash = $kullanicibilgisi["sifre"];
+
+            if ($password==$hash) {
+                $_SESSION["id"] = $kullanicibilgisi["id"];
+                $_SESSION["ad"] = $kullanicibilgisi["ad"];
+                $_SESSION["soyad"] = $kullanicibilgisi["soyad"];
+                header("Location: index.php");
+                exit();
+            } else {
+                $Err= "Şifre yanlış!";
+            }
+        } else {
+            $Err= "Kullanıcı bulunamadı!";
+        }
+    } else {
+        $Err= "Sorgu hatası: " . mysqli_error($connect);
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUBilet Hesabına Giriş Yap</title>
+    <p><?php echo $Err ?></p>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,7 +88,7 @@
 </head>
 <body>
 
-    <form>
+    <form method = "post">
         <h2>BUBilet'e Giriş Yap</h2>
 
         <label for="email">E-Posta:</label>
@@ -59,7 +97,7 @@
         <label for="password">Şifre:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Giriş Yap</button>
+        <input type="submit" name="submit" value="Giriş Yap" require>
     </form>
 
 </body>

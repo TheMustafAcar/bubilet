@@ -1,3 +1,24 @@
+<?php
+include("connect.php");
+$name=$surname=$number=$email=$password="";
+if (isset($_POST["submit"])) 
+{
+    $name=$_POST["name"];
+    $surname=$_POST["surname"];
+    $number=$_POST["number"];
+    $email=$_POST["email"];
+    $password=$_POST["password"];
+
+    $ekle="INSERT INTO users (ad, soyad, eposta, sifre, telefon) VALUES ('$name', '$surname', '$email', '$password', '$number')";
+    $query=mysqli_query($connect,$ekle);
+
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -51,7 +72,7 @@
 <body>
     
     <div>
-    <form>
+    <form method="POST" action="">
         <h2>BUBilet'e Üye Ol</h2>
 
         <label for="username">Adınız:</label>
@@ -69,7 +90,7 @@
         <label for="password">Şifre:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Kayıt Ol</button>
+        <input type="submit" name="submit" require value="Kayıt Ol"> 
     </form>
     </div>
 
