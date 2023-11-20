@@ -1,5 +1,5 @@
 <?php
-// dbtecnoc_mustafa
+//dbtecnoc_mustafa
 // ]rHCpyAx^~jX
 // dbtecnoc_bubilet
 $name="localhost";
