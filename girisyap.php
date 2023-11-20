@@ -7,7 +7,7 @@ if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $cekme = "SELECT * FROM users WHERE eposta='$email'";
+    $cekme = "SELECT * FROM users WHERE eposta= $email";
     $query = mysqli_query($connect, $cekme);
 
     if ($query) {
