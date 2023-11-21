@@ -12,6 +12,8 @@ if (isset($_POST["submit"]))
     $ekle="INSERT INTO users (ad, soyad, eposta, sifre, telefon) VALUES ('$name', '$surname', '$email', '$password', '$number')";
     $query=mysqli_query($connect,$ekle);
 
+    header("Location: girisyap.php");
+
 }
 
 
