@@ -1,13 +1,14 @@
 <?php
+
 include("connect.php");
-$email = $password = $Err="";
+$email = $password = $Err = "";
 session_start();
 
 if (isset($_POST["submit"])) {
-    $email = $_POST["email"];
+    $email = mysqli_real_escape_string($connect, $_POST["email"]);
     $password = $_POST["password"];
 
-    $cekme = "SELECT * FROM users WHERE eposta=$email";
+    $cekme = "SELECT * FROM users WHERE eposta='$email'";
     $query = mysqli_query($connect, $cekme);
 
     if ($query) {
@@ -16,20 +17,19 @@ if (isset($_POST["submit"])) {
         if ($kullanicibilgisi) {
             $hash = $kullanicibilgisi["sifre"];
 
-            if ($password==$hash) {
+            if($password == $hash) {
                 $_SESSION["id"] = $kullanicibilgisi["id"];
                 $_SESSION["ad"] = $kullanicibilgisi["ad"];
                 $_SESSION["soyad"] = $kullanicibilgisi["soyad"];
                 header("Location: index.php");
-                exit();
             } else {
-                $Err= "Şifre yanlış!";
+                $Err = "Şifre yanlış!";
             }
         } else {
-            $Err= "Kullanıcı bulunamadı!";
+            $Err = "Kullanıcı bulunamadı!";
         }
     } else {
-        $Err= "Sorgu hatası: " . mysqli_error($connect);
+        $Err = "Sorgu hatası: " . mysqli_error($connect);
     }
 }
 ?>
