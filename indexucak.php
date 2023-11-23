@@ -81,7 +81,7 @@
       </form> 
  
         <div style="background-color: rgb(255, 255, 255,0.001); width: 40%; position: relative; height: 80%; display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; " class="rightcontent">
-        <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/7.24.png" alt=""> <a style="margin: 6px; text-align: center; position: absolute; bottom: 10px;">7/24 Müşteri Hizmetleri</a>
+        <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/7_24.png" alt=""> <a style="margin: 6px; text-align: center; position: absolute; bottom: 10px;">7/24 Müşteri Hizmetleri</a>
         </div>
         <div style="background-color: rgb(255, 255, 255,0.5); border-radius: 10px; width: 180px; position: relative; height: 150px; "> <img style="position: absolute; left: 35px;" src="img/guvenliodeme.png" alt=""> <a style="margin:6px; margin-left: 35px; text-align: center; position: absolute; bottom: 10px;">Güvenli Ödeme</a>
 
