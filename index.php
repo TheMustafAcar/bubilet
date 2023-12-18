@@ -52,12 +52,12 @@ if (isset($_SESSION["id"])) {
                 
                 
             </datalist>  
-            <hr style="width: 100%; ">
+            <hr style="width: 100%;  ">
 
           </div>  
           <div style="position: relative;width:100%; height: 20%; background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <h1 style="font-size: 16px; color: #949494; margin-right: 10px; position: absolute; left: 20px; top: -15px; z-index: 10;">Varış Noktası</h1>
-            <span style="width: 100%; display:flex;flex-direction: row; align-items: center; justify-content: center;"> <span style="position: absolute; left: 10px;"><i  class="fa-solid fa-location-dot" style="scale: 1.2; color: #8f8f8f;"></i></span><input require name="kalkis" style="outline: none; position: absolute; left: 30px; bottom: 30px; width: 80%; border: none; padding: 10px;" type="text" id="inputField" list="sehirler" placeholder="Şehir seçin">></span>
+            <span style="width: 100%; display:flex;flex-direction: row; align-items: center; justify-content: center;"> <span style="position: absolute; left: 10px;"><i  class="fa-solid fa-location-dot" style="scale: 1.2; color: #8f8f8f;"></i></span><input require name="kalkis" style="outline: none; position: absolute; left: 30px; bottom: 37px; width: 80%; border: none; padding: 10px;" type="text" id="inputField" list="sehirler" placeholder="Şehir seçin">></span>
         
             <datalist id="sehirler">
               <option value="Bursa">

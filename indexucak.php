@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (isset($_SESSION["id"])) {
+  $name = $_SESSION["ad"];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +17,18 @@
 <body>
     <nav class="navbar">
             <a href="indexucak.php" class="navbar-brand"><h1 style="margin-left: 120px; color: #ffffff; font-weight: bold; font-style:italic;">bubilet</h1></a>   
-        <div style="margin-right: 40px;">    
+        <div style="margin-right: 40px;"> 
+        <?php
+          if (isset($_SESSION["id"])) {
+            echo "<a href='#'><button type='button' class='btn btn-success'>$name</button></a>
+            <a href='cikisyap.php'><button type='button' class='btn btn-success'>Çıkış Yap</button></a>";
+          } else {
+            echo "<a href='girisyap.php'><button type='button' class='btn btn-success'>Giriş Yap</button></a>
+            <a href='kayitol.php'><button type='button' class='btn btn-success'>Üye Ol</button></a>";
+          }
+           ?>   
             
-            <a href="girisyap.php"><button type="button" class="btn btn-success">Giriş Yap</button></a>
-           <a href="kayitol.php"><button type="button" class="btn btn-success">Üye Ol</button></a>
+            
         </div>
     </nav>
     <div>
@@ -43,7 +57,7 @@
         </div>  
         <div style="position: relative;width:100%; height: 20%; background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <h1 style="font-size: 16px; color: #949494; margin-right: 10px; position: absolute; left: 20px; top: -15px; z-index: 10;">Varış Noktası</h1>
-          <span style="width: 100%; display:flex;flex-direction: row; align-items: center; justify-content: center;"> <span style="position: absolute; left: 10px;"><i  class="fa-solid fa-location-dot" style="scale: 1.2; color: #8f8f8f;"></i></span><input name="kalkis" style="outline: none; position: absolute; left: 30px; bottom: 40px; width: 80%; border: none; padding: 10px;" type="text" id="arama" list="sehirler2" placeholder="Şehir seçin"></span>
+          <span style="width: 100%; display:flex;flex-direction: row; align-items: center; justify-content: center;"> <span style="position: absolute; left: 10px;"><i  class="fa-solid fa-location-dot" style="scale: 1.2; color: #8f8f8f;"></i></span><input name="kalkis" style="outline: none; position: absolute; left: 30px; bottom: 37px; width: 80%; border: none; padding: 10px;" type="text" id="arama" list="sehirler2" placeholder="Şehir seçin"></span>
       
           <datalist id="sehirler2">
             <option value="Bursa"></option>

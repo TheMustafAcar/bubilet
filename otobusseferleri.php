@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (isset($_SESSION["id"])) {
+  $name = $_SESSION["ad"];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +19,15 @@
             <a href="index.php" class="navbar-brand"><h1 style="margin-left: 120px; color: #ffffff; font-weight: bold; font-style:italic;">bubilet</h1></a>   
         <div style="margin-right: 40px;"> 
             
-           <a href="girisyap.php">   <button type="button" class="btn btn-success">Giriş Yap</button></a>
-           <a href="kayitol.php"><button type="button" class="btn btn-success">Üye Ol</button></a>
+        <?php
+          if (isset($_SESSION["id"])) {
+            echo "<a href='#'><button type='button' class='btn btn-success'>$name</button></a>
+            <a href='cikisyap.php'><button type='button' class='btn btn-success'>Çıkış Yap</button></a>";
+          } else {
+            echo "<a href='girisyap.php'><button type='button' class='btn btn-success'>Giriş Yap</button></a>
+            <a href='kayitol.php'><button type='button' class='btn btn-success'>Üye Ol</button></a>";
+          }
+           ?>
         </div>
     </nav>
     <div style="width: 100%; min-height: 513px; background-color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: center;">
