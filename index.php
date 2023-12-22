@@ -185,7 +185,7 @@ if (isset($_SESSION["id"])) {
                 alert("Lütfen Kalkış ve Varış Noktalarını Belirtiniz..");
                 
             } else {
-                document.getElementById("otogit").href="BUBilet/otobusseferleri.php";
+                document.getElementById("otogit").href="otobusseferleri.php";
 
             }
         }
