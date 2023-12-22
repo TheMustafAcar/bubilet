@@ -55,7 +55,7 @@
     <!-- Koltuklar burada listelenecek -->
     
 </div>
-<a href="odemebasarılı.php"><button type="button" class="btn btn-success" style="margin: 20px;">Ödeme Yap</button></a>
+<a href="odemebasarili.php"><button type="button" class="btn btn-success" style="margin: 20px;">Ödeme Yap</button></a>
 
 
 
