@@ -12,7 +12,7 @@ if (isset($_SESSION["id"])) {
     <link rel="stylesheet" href="otobusseferleri.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>BUBilet (En Uygun Otobüs ve Uçak Bileti)</title>
+    <title>BUBilet Otobüs Seferleri</title>
 </head>
 <body>
     <nav class="navbar">
@@ -98,7 +98,7 @@ if (isset($_SESSION["id"])) {
                       <h1 style='font-size: 30px;'>$sefer[ucret] TL</h1>
                       
                   </div>
-                  <div style='margin-left:200px; margin-top: 10px;'><button type='button' class='btn btn-danger'>Koltuk Seç</button></div>
+                  <a href='koltuksec.php'><div style='margin-left:200px; margin-top: 10px;'><button type='button' class='btn btn-danger'>Koltuk Seç</button></div></a>
                   </div>";
               }
             } else {

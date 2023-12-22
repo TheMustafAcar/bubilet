@@ -4,8 +4,8 @@
 // dbtecnoc_bubilet
 
 $name="localhost";
-$username="dbtecnoc_mustafa";
-$password="]rHCpyAx^~jX";
-$dbname="dbtecnoc_bubilet";
+$username="root";
+$password="";
+$dbname="bubilet";
 $connect=mysqli_connect($name,$username,$password,$dbname); 
 ?>

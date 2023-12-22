@@ -176,6 +176,7 @@ if (isset($_SESSION["id"])) {
       <h1 style="font-size: 20px;"><i class="fa-regular fa-copyright" style="color: #000000;"></i>  Copyright. Tüm Hakları Saklıdır..</h1>
 
     </div>
+    <!--Hata mesajı kısmı-->
     <script>
         function checkAndSubmit() {
             var inputField = document.getElementById("inputField").value;
