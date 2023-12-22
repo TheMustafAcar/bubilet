@@ -91,7 +91,7 @@ if (isset($_SESSION["id"])) {
             </div>
 
             
-            <a href="" id="otogit"><input class="btn btn-success" style="width: 90%; margin-top: 30px; margin-left: 20px;" type="button" onclick="checkAndSubmit()" value="Otobüs Bileti Bul"></a>
+            <a href=""id="otogit"><input class="btn btn-success" style="width: 90%; margin-top: 30px; margin-left: 20px;" type="button" onclick="checkAndSubmit()" value="Otobüs Bileti Bul"></a>
           </div>
              
         </form> 
@@ -185,7 +185,7 @@ if (isset($_SESSION["id"])) {
                 alert("Lütfen Kalkış ve Varış Noktalarını Belirtiniz..");
                 
             } else {
-                document.getElementById("otogit").href="/otobusseferleri.php";
+                document.getElementById("otogit").href="BUBilet/otobusseferleri.php";
 
             }
         }
