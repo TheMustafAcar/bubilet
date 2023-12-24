@@ -88,8 +88,8 @@ if (isset($_SESSION["id"])) {
       </script>
       </div>
 
-            <input
-            class="btn btn-success" style="width: 90%; margin-top: 30px; margin-left: 20px;" type="submit" value="Uçak Bileti Bul">
+            
+           <a href="ucakseferleri.php" id="otogit"><input class="btn btn-success" style="width: 90%; margin-top: 30px; margin-left: 20px;" type="button" onclick="checkAndSubmit()" value="Uçak Bileti Bul"></a>
           </div>
            
       </form> 
@@ -174,6 +174,20 @@ if (isset($_SESSION["id"])) {
       <h1 style="font-size: 20px;"><i class="fa-regular fa-copyright" style="color: #000000;"></i>  Copyright. Tüm Hakları Saklıdır..</h1>
 
     </div>
+     <!--Hata mesajı kısmı-->
+     <script>
+        function checkAndSubmit() {
+            var inputField = document.getElementById("inputField").value;
+
+            if (inputField.trim() === "") {
+                alert("Lütfen Kalkış ve Varış Noktalarını Belirtiniz..");
+                
+            } else {
+                document.getElementById("otogit").href="ucakseferleri.php";
+
+            }
+        }
+    </script>
 </body>
 
 </html>
